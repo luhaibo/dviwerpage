@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="LuXOne DViewer — 本地查看口腔 CBCT、全景等 DICOM 医学影像。" />
+  <title>DViewer — LuXOne</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" width="40" height="40" alt="LuXOne" />
+        <span class="brand-text"><span class="lux">LuXOne</span><span class="prod">DViewer</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#features" data-i18n="nav_features">功能</a>
+        <a href="#workflow" data-i18n="nav_workflow">使用方式</a>
+        <a href="#tech" data-i18n="nav_tech">技术</a>
+        <a href="#docs" data-i18n="nav_docs">文档</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch" role="group">
+          <button type="button" class="lang-btn active" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn nav-download" href="https://rcnpeeuppi4d.feishu.cn/file/TZgfbxDDYoub0Vx7jKbc2WDXn0c?from=from_copylink" data-i18n="nav_download">下载</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner" id="top">
+      <h1 data-i18n="hero_h1">在本地清晰查看口腔 CBCT 与全景 DICOM</h1>
+      <p class="lead" data-i18n-html="hero_lead">
+        <strong>DViewer</strong> 是 <strong>LuXOne</strong> 旗下的 Windows 桌面端医学影像查看程序。
+        指定包含 DICOM 的文件夹即可<strong>递归扫描</strong>子目录，自动进入全景浏览或 CBCT 多页工作流，并由 GPU（wgpu）加速显示。
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://rcnpeeuppi4d.feishu.cn/file/TZgfbxDDYoub0Vx7jKbc2WDXn0c?from=from_copylink" data-i18n="cta_download">下载 DViewer</a>
+        <a class="btn ghost" href="#workflow" data-i18n="cta_how">使用方式</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="features" class="section">
+      <h2 data-i18n="features_h2">核心功能</h2>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="card1_h3">以文件夹为中心</h3>
+          <p data-i18n-html="card1_p">支持命令行传入路径，或使用程序<strong>标题栏</strong>中的文件夹图标选择目录；自动递归扫描子文件夹中的 DICOM。</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="card2_h3">智能进入模式</h3>
+          <p data-i18n-html="card2_p">扫描到<strong>多个</strong> DICOM 时进入 CBCT 外壳（MPR、CPR、Side、TMJ、Report 等 Tab）；<strong>单个</strong>文件默认走首张全景；若为单文件体数据，启动时可加 <code>--cbct</code> 进入 CBCT。</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="card3_h3">GPU 加速渲染</h3>
+          <p data-i18n-html="card3_p">基于 wgpu，为二维切片与三维相关视图提供流畅的窗宽窗位与交互基础。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section muted">
+      <h2 data-i18n="workflow_h2">快速开始</h2>
+      <ol class="steps">
+        <li data-i18n-html="step1"><strong>准备数据</strong> — 将病例 DICOM 放在同一文件夹内（可含子目录）。</li>
+        <li data-i18n-html="step2"><strong>启动程序</strong> — 运行 <code>d-viewer.exe</code> 并传入文件夹路径，或使用标题栏「打开文件夹」图标。</li>
+        <li data-i18n-html="step3"><strong>阅片</strong> — 在全景或各 CBCT Tab 中浏览；详细说明见主仓库 <code>DViewer/docs/</code> 下的用户手册与设计文档。</li>
+      </ol>
+    </section>
+
+    <section id="tech" class="section">
+      <h2 data-i18n="tech_h2">技术栈</h2>
+      <ul class="tags" aria-label="技术标签">
+        <li>Rust</li>
+        <li>iced</li>
+        <li>wgpu</li>
+        <li>DICOM（dicom-rs）</li>
+        <li>Windows</li>
+      </ul>
+      <p class="fine" data-i18n-html="tech_fine">DViewer 在 LuXOne <code>rust-cbct</code> 工作区中开发，与 PatientManager 等组件共享字体与图标资源。</p>
+    </section>
+
+    <section id="docs" class="section muted">
+      <h2 data-i18n="docs_h2">文档与支持</h2>
+      <p data-i18n-html="docs_p">应用源码与说明位于主仓库 <code>DViewer/docs/</code>：<code>DViewer_User_Manual.md</code>（英文用户手册）、<code>CBCT_VIEWER.md</code>（界面与 Tab 约定）。可将 HTML 版手册用 Word 另存为 docx，或使用 Pandoc 导出，详见手册内说明。</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><img src="assets/logo.png" width="28" height="28" alt="" class="footer-logo" /> <span data-i18n="footer_text">LuXOne · DViewer 医学影像查看</span></p>
+  </footer>
+</body>
+</html>
