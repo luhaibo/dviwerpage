@@ -11,7 +11,6 @@
       nav_advantages: "优势",
       nav_workflow: "使用方式",
       nav_history: "历史版本",
-      nav_docs: "文档",
       nav_download: "下载",
       hero_h1: "在本地清晰查看口腔 CBCT 与全景 DICOM",
       hero_lead:
@@ -39,11 +38,7 @@
       step1: "<strong>准备数据</strong> — 将病例 DICOM 放在同一文件夹内（可含子目录）。",
       step2:
         "<strong>启动程序</strong> — 运行 <code>d-viewer.exe</code> 并传入文件夹路径，或使用标题栏「打开文件夹」图标。",
-      step3:
-        "<strong>阅片</strong> — 在全景或各 CBCT Tab 中浏览；详细说明见应用仓库 <code>DViewer/docs/</code> 下的用户手册与设计文档。",
-      docs_h2: "文档与支持",
-      docs_p:
-        "应用源码与说明位于仓库 <code>DViewer/docs/</code>：<code>DViewer_User_Manual.md</code>（英文用户手册）、<code>CBCT_VIEWER.md</code>（界面与 Tab 约定）。可将 HTML 版手册用 Word 另存为 docx，或使用 Pandoc 导出，详见手册内说明。",
+      step3: "<strong>阅片</strong> — 在全景或各 CBCT Tab 中浏览即可。",
       footer_text: "DViewer · 医学影像查看",
       meta_desc: "DViewer — 本地查看口腔 CBCT、全景等 DICOM 医学影像。",
       lang_aria: "界面语言",
@@ -63,7 +58,6 @@
       nav_advantages: "Highlights",
       nav_workflow: "Get started",
       nav_history: "Release history",
-      nav_docs: "Docs",
       nav_download: "Download",
       hero_h1: "Local DICOM viewing for dental CBCT and panoramic studies",
       hero_lead:
@@ -91,11 +85,7 @@
       step1: "<strong>Prepare data</strong> — place study DICOMs in one folder (nested folders are fine).",
       step2:
         "<strong>Run DViewer</strong> — execute <code>d-viewer.exe</code> with the folder path, or use the in-app folder icon.",
-      step3:
-        "<strong>Review</strong> — use panoramic or CBCT tabs; see <code>DViewer/docs/DViewer_User_Manual.md</code> in the repository for details.",
-      docs_h2: "Documentation",
-      docs_p:
-        "In the source tree: <code>DViewer/docs/DViewer_User_Manual.md</code> (English user manual), <code>DViewer/docs/CBCT_VIEWER.md</code> (UI design notes). Export to Word via HTML or Pandoc as described in the manual.",
+      step3: "<strong>Review</strong> — browse in panoramic mode or the CBCT tabs as needed.",
       footer_text: "DViewer · Medical imaging",
       meta_desc: "DViewer — local DICOM viewer for dental CBCT and panoramic imaging.",
       lang_aria: "Display language",

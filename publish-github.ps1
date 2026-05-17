@@ -18,6 +18,12 @@ try {
     Get-ChildItem -LiteralPath $WorkDir -Force | Where-Object { $_.Name -ne ".git" } | Remove-Item -Recurse -Force
     Copy-Item -Path (Join-Path $SourceRoot "*") -Destination $WorkDir -Recurse -Force
 
+    # README 仅本地说明，不推送到对外发布仓库
+    $ReadmePublish = Join-Path $WorkDir "README.md"
+    if (Test-Path -LiteralPath $ReadmePublish) {
+        Remove-Item -LiteralPath $ReadmePublish -Force
+    }
+
     Set-Location $WorkDir
     git add -A
     $pending = git status --porcelain
