@@ -14,7 +14,7 @@
       nav_download: "下载",
       hero_h1: "在本地清晰查看口腔 CBCT 与全景 DICOM",
       hero_lead:
-        "<strong>DViewer</strong> 是一款由个人开发者维护的 Windows 桌面端医学影像查看程序。指定包含 DICOM 的文件夹即可<strong>递归扫描</strong>子目录，自动进入全景浏览或 CBCT 多页工作流，在本地流畅阅片。",
+        "<strong>DViewer</strong> 是一款 Windows 桌面端医学影像查看程序。指定包含 DICOM 的文件夹即可<strong>递归扫描</strong>子目录，自动进入全景浏览或 CBCT 多页工作流，在本地流畅阅片。",
       cta_download: "下载 DViewer",
       cta_how: "使用方式",
       hero_version_label: "当前版本",
@@ -61,7 +61,7 @@
       nav_download: "Download",
       hero_h1: "Local DICOM viewing for dental CBCT and panoramic studies",
       hero_lead:
-        "<strong>DViewer</strong> is a Windows desktop DICOM viewer maintained as a personal project. Point it at a folder of DICOM files: it scans recursively, then opens panoramic or CBCT-style workflows for smooth local review.",
+        "<strong>DViewer</strong> is a Windows desktop DICOM viewer. Point it at a folder of DICOM files: it scans recursively, then opens panoramic or CBCT-style workflows for smooth local review.",
       cta_download: "Download DViewer",
       cta_how: "How it works",
       hero_version_label: "Version",
