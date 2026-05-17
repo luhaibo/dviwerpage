@@ -11,6 +11,7 @@
       nav_advantages: "优势",
       nav_workflow: "使用方式",
       nav_history: "历史版本",
+      nav_contact: "联系",
       nav_download: "下载",
       hero_h1: "在本地清晰查看口腔 CBCT 与全景 DICOM",
       hero_lead:
@@ -39,6 +40,9 @@
       step2:
         "<strong>启动程序</strong> — 运行 <code>d-viewer.exe</code> 并传入文件夹路径，或使用标题栏「打开文件夹」图标。",
       step3: "<strong>阅片</strong> — 在全景或各 CBCT Tab 中浏览即可。",
+      contact_h2: "联系我",
+      contact_p: "使用 <strong>飞书</strong> 扫描下方二维码即可添加我，欢迎反馈问题与交流。",
+      contact_qr_alt: "飞书添加联系人二维码",
       footer_text: "DViewer · 医学影像查看",
       meta_desc: "DViewer — 本地查看口腔 CBCT、全景等 DICOM 医学影像。",
       lang_aria: "界面语言",
@@ -58,6 +62,7 @@
       nav_advantages: "Highlights",
       nav_workflow: "Get started",
       nav_history: "Release history",
+      nav_contact: "Contact",
       nav_download: "Download",
       hero_h1: "Local DICOM viewing for dental CBCT and panoramic studies",
       hero_lead:
@@ -86,6 +91,9 @@
       step2:
         "<strong>Run DViewer</strong> — execute <code>d-viewer.exe</code> with the folder path, or use the in-app folder icon.",
       step3: "<strong>Review</strong> — browse in panoramic mode or the CBCT tabs as needed.",
+      contact_h2: "Contact",
+      contact_p: "Scan the <strong>Feishu</strong> (Lark) QR code below to add me — feedback and questions welcome.",
+      contact_qr_alt: "Feishu QR code to add as contact",
       footer_text: "DViewer · Medical imaging",
       meta_desc: "DViewer — local DICOM viewer for dental CBCT and panoramic imaging.",
       lang_aria: "Display language",
@@ -121,6 +129,10 @@
     document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
       var key = el.getAttribute("data-i18n-html");
       if (key && t[key] != null) el.innerHTML = t[key];
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var keyAlt = el.getAttribute("data-i18n-alt");
+      if (keyAlt && t[keyAlt] != null) el.setAttribute("alt", t[keyAlt]);
     });
 
     var nav = document.querySelector(".nav");

@@ -419,3 +419,26 @@ code {
 .history-table td:last-child {
   white-space: nowrap;
 }
+
+.contact-lead {
+  margin: 0 0 1.25rem;
+  max-width: 36rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.contact-qr-wrap {
+  display: inline-block;
+  padding: 0.75rem;
+  background: var(--bg-elev);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  line-height: 0;
+}
+
+.contact-qr {
+  display: block;
+  width: min(220px, 72vw);
+  height: auto;
+  border-radius: 8px;
+}
