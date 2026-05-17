@@ -216,7 +216,19 @@ a:hover {
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-version {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.hero-version-num {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .fine {
@@ -331,4 +343,79 @@ a:hover {
 
 code {
   font-family: ui-monospace, Consolas, monospace;
+}
+
+.hero-sub {
+  padding-bottom: 2rem;
+}
+
+.hero-inner-left {
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 0.25rem;
+}
+
+.lead-left {
+  text-align: left;
+}
+
+.history-main {
+  padding-top: 0;
+}
+
+.history-status {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  min-height: 1.5em;
+}
+
+.history-status code {
+  font-size: 0.85em;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.08em 0.32em;
+  border-radius: 4px;
+}
+
+.history-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.history-table th,
+.history-table td {
+  padding: 0.7rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.history-table th {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table td {
+  color: var(--muted);
+}
+
+.history-table td:last-child {
+  white-space: nowrap;
 }

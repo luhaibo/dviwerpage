@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DViewer 历史版本下载。" />
+  <title data-i18n="history_title">DViewer — 历史版本</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="site.js" defer></script>
+</head>
+<body data-page="history">
+  <header class="hero hero-sub">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" width="40" height="40" alt="DViewer" />
+        <span class="brand-text"><span class="prod">DViewer</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#features" data-i18n="nav_features">功能</a>
+        <a href="index.html#advantages" data-i18n="nav_advantages">优势</a>
+        <a href="index.html#workflow" data-i18n="nav_workflow">使用方式</a>
+        <a href="history.html" data-i18n="nav_history" aria-current="page">历史版本</a>
+        <a href="index.html#docs" data-i18n="nav_docs">文档</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch" role="group">
+          <button type="button" class="lang-btn active" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn nav-download" href="https://rcnpeeuppi4d.feishu.cn/file/TZgfbxDDYoub0Vx7jKbc2WDXn0c?from=from_copylink" data-i18n="nav_download">下载</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner hero-inner-left" id="top">
+      <h1 data-i18n="history_h1">历史版本</h1>
+    </div>
+  </header>
+
+  <main class="section history-main">
+    <p class="history-status" id="history-status" role="status" aria-live="polite"></p>
+    <div class="history-table-wrap" id="history-table-wrap" hidden>
+      <table class="history-table">
+        <thead>
+          <tr>
+            <th data-i18n="history_col_version">版本</th>
+            <th data-i18n="history_col_date">日期</th>
+            <th data-i18n="history_col_notes">说明</th>
+            <th data-i18n="history_col_link">下载</th>
+          </tr>
+        </thead>
+        <tbody id="history-tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><img src="assets/logo.png" width="28" height="28" alt="" class="footer-logo" /> <span data-i18n="footer_text">DViewer · 医学影像查看</span></p>
+  </footer>
+</body>
+</html>
