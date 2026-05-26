@@ -2,7 +2,7 @@
   "use strict";
 
   var STORAGE_KEY = "dviewer-site-lang";
-  var DEFAULT_APP_VERSION = "0.1.0";
+  var DEFAULT_APP_VERSION = "0.2.0";
 
   var I18N = {
     zh: {

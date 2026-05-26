@@ -1,11 +1,19 @@
 {
+  "current_version": "0.2.0",
   "versions": [
+    {
+      "version": "0.2.0",
+      "date": "2026-05-26",
+      "url": "https://rcnpeeuppi4d.feishu.cn/file/XW7zbtYp5omoVrxazAQc3lNAnHt",
+      "notes_zh": "修复横断面上下移动十字线时矢状面方向反转的问题；修复横断面旋转十字线时图像跟转的问题。",
+      "notes_en": "Fixed sagittal crosshair direction reversal when moving crosshair vertically in axial view; fixed axial image rotating when crosshair is rotated."
+    },
     {
       "version": "0.1.0",
       "date": "2026-05-17",
-      "url": "https://rcnpeeuppi4d.feishu.cn/file/TZgfbxDDYoub0Vx7jKbc2WDXn0c?from=from_copylink",
-      "notes_zh": "当前发布",
-      "notes_en": "Current release"
+      "url": "https://rcnpeeuppi4d.feishu.cn/file/TZgfbxDDYoub0Vx7jKbc2WDXn0c",
+      "notes_zh": "首个公开发布",
+      "notes_en": "First public release"
     }
   ]
 }
